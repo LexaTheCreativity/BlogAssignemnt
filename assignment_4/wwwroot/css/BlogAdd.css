@@ -1,0 +1,23 @@
+#HeadlineAdd{
+    background-image: url("/BackgroundSky.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+}
+
+body{
+    background-image: url("/BackgroundSky.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#AddPostLayout{
+    border: 3px solid black;
+    padding: 10px;
+    background-color: lightskyblue;
+    box-shadow: 5px 10px;
+}

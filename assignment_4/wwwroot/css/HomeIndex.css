@@ -1,0 +1,32 @@
+#WelcomeText{
+    background-image: url("/BackgroundSky.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+    font-weight: bold;
+}
+
+body{
+    background-image: url("/BackgroundSky.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+p{
+    font-size: 30px;
+    background-color: lightcoral;
+    padding: 10px;
+    box-shadow: 5px 5px mediumpurple;
+    font-weight: bold;
+    border: 1px solid;
+}
+
+h1{
+    font-size: 50px;
+    text-shadow: 5px 5px mediumpurple;
+    color: coral;
+}

@@ -1,0 +1,15 @@
+@model assignemnt_4.Models.Blog
+
+<div class="text-center" id="PostLayout">
+    <div class="text-center Nickname">
+        @Model.User?.Nickname
+    </div>
+    <h2 class="Title">@Model.Title</h2>
+    <div class="text-center Summary">
+        @Model.Summary
+    </div>
+    <div class="text-center Content">
+        @Model.Content
+    </div>
+    <p class="Time">@Model.Time.ToString("dd.MM.yyyy")</p>
+</div>

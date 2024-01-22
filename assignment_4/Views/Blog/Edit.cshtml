@@ -1,0 +1,33 @@
+@model assignemnt_4.Models.Blog
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="css/BlogEdit.css">
+<body>
+<div class="text-center" id="HeadlineEdit">
+    <h1>Edit a post</h1> 
+</div>
+<br>
+<div class="text-center" id="EditPostLayout">
+    <form asp-controller="Blog" asp-action="Edit" asp-route-id="@Model.Id" asp-route-userId="@Model.UserId" method="post" class="form-box">
+        <div class="form-group">
+            <input asp-for="Title" id="Title" type="text" required placeholder="title" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+            <textarea asp-for="Summary" id="Summary" type="text" required placeholder="Summary" class="form-control"></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+            <textarea asp-for="Content" id="Content"  type="text" required placeholder="Content" class="form-control"></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+             <input id="Submit" type="submit" value="Save" class="form-control">
+        </div>
+    </form>
+
+</div>
+
+</body>

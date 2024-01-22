@@ -1,0 +1,26 @@
+@model blogviewmodel
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="css/BlogIndex.css">
+<body>
+<div class="text-center" id="HeadlineHomePage">
+    <h1>HankSmoody</h1> 
+</div>
+<br>
+<div class="addPostButton">
+    <a class="btn form-control" href="@Url.Action("Add", "Blog")">Add a post</a>
+</div>
+
+@foreach (var posts in Model.BlogPosts)
+{
+    <partial name="_PostPartial" model="posts" />
+     <div class="EditPostButton">
+        <a class="btn form-control" asp-action="Edit" asp-route-id="@posts.Id">Edit</a>
+    </div>
+}   
+
+
+
+</body>
